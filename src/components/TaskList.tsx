@@ -1,11 +1,25 @@
 import * as React from 'react';
+import { ITask } from '../interfaces/task';
 
+import styles from "./TaskList.module.css";
 
-const  TaskList = () => {
+interface Props{
+  taskList : ITask[]
+}
+
+const  TaskList = ({taskList}: Props) => {
   return (
-    <div>
-        lista
-    </div>
+    <>
+    {taskList.length > 0 ?(
+      taskList.map((task)=>(
+        <div key={task.id}>
+          <p>{task.title}</p>
+        </div>
+      ))
+    ): (
+      <p>Não possui tarefas cadastradas</p>
+    )}
+    </>
   );
 };
 
