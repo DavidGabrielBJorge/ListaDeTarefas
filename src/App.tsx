@@ -15,6 +15,13 @@ function App() {
    //Declarando uma lista de tarefas com base na interface Task
    const [taskList, setTaskList] = useState<ITask[]>([]);
 
+   //Função para deletar a tarefa
+   const deleteTask = (id: number) => {
+      setTaskList(
+         taskList.filter(task =>{
+            return task.id !== id
+         }))
+   }
  return (
  <div>
 
@@ -27,7 +34,7 @@ function App() {
 
       <div>
          <h2>As tarefas</h2>
-         <TaskList taskList={taskList}></TaskList>
+         <TaskList taskList={taskList} handleDelete={deleteTask}></TaskList>
       </div>
 
     </main>
