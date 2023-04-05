@@ -4,11 +4,14 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import TaskForm from './components/TaskForm';
 import TaskList from './components/TaskList';
+import Modal from './components/Modal';
+
 //CSS App
 import styles from './App.module.css';
 
 //Interface das Tasks
 import { ITask } from './interfaces/task';
+
 
 function App() {
 
@@ -24,6 +27,7 @@ function App() {
    }
  return (
  <div>
+   <Modal children={<TaskForm btnText='Editar tarefa' taskList={taskList}/>}></Modal>
 
     <Header></Header>
     <main className={styles.main}>
