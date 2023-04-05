@@ -5,7 +5,7 @@ Hooks que serão usados
 useState: manipular o estado
 ChangeEvent: alterar alguma coisa quando acontece um evento na tela
 FormEvent: submeter o formulário
-useEffect
+useEffect: faz uma ação uma única vez, como no react fica constantemente "observando" as ações para editar um componente apenas uma vex precisa usar esse Hook
 */
 import styles from './TaskForm.module.css';
 
@@ -17,31 +17,49 @@ interface Props{
   btnText: string;
   taskList: ITask[];
   setTaskList?: React.Dispatch<React.SetStateAction<ITask[]>>;//Alterar uma state de uma lista, a ? significa que ela pode ou não ser alterada
+  task?: ITask | null;//Pode ou não receber um id de uma tarefa e pode receber null
+  handleUpdate?(id: number, title: string, description: string, difficulty: number): void;//método opcional, por isso tem ?
 }
 
-const  TaskForm = ({btnText, taskList, setTaskList}: Props) => {
+const  TaskForm = ({btnText, taskList, setTaskList, task, handleUpdate}: Props) => {
 
   //Declarando variáveis
-  const [id, setId]=useState<number>(0)
-  const [title, setTitle]=useState<string>("")
-  const [description, setDescription]=useState<string>("")
-  const [difficulty, setDifficulty]=useState<number>(0)
+  const [id, setId]=useState<number>(0);
+  const [title, setTitle]=useState<string>("");
+  const [description, setDescription]=useState<string>("");
+  const [difficulty, setDifficulty]=useState<number>(0);
+
+  //Função para mostrar os dados da tarefa que deve ser editada
+  useEffect(()=>{
+    //Preenche os dados da tarefa com os dados alterados
+    if(task){
+      setId(task.id);
+      setTitle(task.title);
+      setDescription(task.description);
+      setDifficulty(task.difficulty);
+    }
+  }, [task])
 
   //Função para adicionar as tarefas
   const addTaskHandler = (e: FormEvent<HTMLFormElement>) =>{
     e.preventDefault();//Não carregar a tela
 
-    const id = Math.floor(Math.random()*1000)//id será aleatório
-    const newTask: ITask = {id, title, description, difficulty}
-    
-    setTaskList!([...taskList, newTask])//Reunindo todas as tasks em uma lista, incluindo a nova task, como no App possui a ?, para indicar que vai vir uma taskList deve adicionar o !
-    
-    //Zerar os campos ao adicionar
-    setTitle("");
-    setDescription("");
-    setDifficulty(0);
+    //Caso for atualizar
+    if(handleUpdate){
+      handleUpdate(id, title, description, difficulty)//Envia os dados para o handleUpdate no App
+    }else{//Caso for criar
 
-    console.log(taskList)
+      const id = Math.floor(Math.random()*1000)//id será aleatório
+      const newTask: ITask = {id, title, description, difficulty}
+      
+      setTaskList!([...taskList, newTask])//Reunindo todas as tasks em uma lista, incluindo a nova task, como no App possui a ?, para indicar que vai vir uma taskList deve adicionar o !
+      
+      //Zerar os campos ao adicionar
+      setTitle("");
+      setDescription("");
+      setDifficulty(0);
+  }
+
   }
 
   //Função para pegar os valores 
