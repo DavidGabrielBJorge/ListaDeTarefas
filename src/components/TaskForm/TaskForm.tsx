@@ -10,7 +10,7 @@ useEffect: faz uma ação uma única vez, como no react fica constantemente "obs
 import styles from './TaskForm.module.css';
 
 //Interface das Tasks
-import { ITask } from '../interfaces/task';
+import { ITask } from '../../interfaces/task';
 
 //Os Props são os objetos que vem do App.tsx
 interface Props{

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ITask } from '../interfaces/task';
+import { ITask } from '../../interfaces/task';
 
 import styles from "./TaskList.module.css";
 
