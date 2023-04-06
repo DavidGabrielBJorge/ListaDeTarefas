@@ -4,7 +4,17 @@ import styles from "./Footer.module.css"
 const  Footer = () => {
   return (
     <footer className={styles.footer}>
-        <p>David  © 2023 Copyright</p>
+
+      <div className={styles.repositorio}>
+        <h2>Confira o repositório do projeto</h2>
+        
+        <a className={styles.link} href="https://github.com/DavidGabrielBJorge/Imobiliaria">Clique aqui</a>
+      
+        <p className={styles.creditos}>David  © 2023 Copyright</p>
+
+      </div>
+       
+
     </footer>
   );
 };

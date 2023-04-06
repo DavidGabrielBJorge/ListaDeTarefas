@@ -3,6 +3,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #282c34;
-    color: white;
+    background-color: #050a0e;
+    color: #e7e7e9;
+}
+
+.repositorio h2{
+    margin-bottom: 0.5em;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.link{
+    width: 30%;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.creditos{
+    padding-top: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

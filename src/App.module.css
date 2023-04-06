@@ -2,8 +2,10 @@
     min-height: 70vh;
     text-align: center;
     padding: 2em;
+    background-color: #f89950;
 }
 
 .main h2{
     margin-bottom: 0.8em;
 }
+
