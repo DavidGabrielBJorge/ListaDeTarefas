@@ -17,12 +17,12 @@ const  TaskList = ({taskList, handleDelete, handleEdit}: Props) => {
         <div key={task.id} className={styles.task}>
           <div className={styles.info}>
             <h4>{task.title}</h4>
-            <h4>{task.description}</h4>
+            <h3>{task.description}</h3>
             <p>Dificuldade: {task.difficulty}</p>
           </div>
 
           <div className={styles.actions}>
-            <i className='bi bi-pencil' onClick={()=>{handleEdit(task)}}></i> {/*Vai enviar para editar o id da tarefa*/}
+            <i className='bi bi-pencil'  onClick={()=>{handleEdit(task)}}></i> {/*Vai enviar para editar o id da tarefa*/}
             <i className='bi bi-trash' onClick={()=>{handleDelete(task.id)}}></i>
 
           </div>

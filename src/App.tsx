@@ -77,7 +77,7 @@ function App() {
       </div>
 
       <div>
-         <h2>As tarefas</h2>
+         <h2>Lista </h2>
          <TaskList taskList={taskList} handleDelete={deleteTask} handleEdit={editTask}></TaskList>
       </div>
 

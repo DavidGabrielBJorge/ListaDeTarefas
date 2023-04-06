@@ -5,6 +5,10 @@
     margin: 0 auto;
     border-bottom: 1px solid #ccc;
     padding: 1em;
+    background-color: #b4c4de;
+    border-radius: 0.8em;
+    box-shadow: 5px 5px #888888;
+    margin-top: 1em;
 }
 
 .info{
@@ -14,6 +18,10 @@
 .info h4{
     font-size: 1.2em;
     margin-bottom: 1em;
+}
+
+.info h3{
+    font-size: 1.0em;
 }
 
 .actions{
@@ -27,12 +35,12 @@
     margin-bottom: .5em;
     font-size: 1.2em;
     cursor: pointer;
-    background-color: #282c34;
-    color: white;
+    background-color: #050a0e;
+    color: #e7e7e9;
     padding: .4em;
     transition: .5s;
 }
 
 .actions i:hover{
-    color: #61dafb
+    color: #f89950
 }

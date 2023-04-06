@@ -32,3 +32,22 @@
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 1300px) {
+
+    .repositorio h2{
+        font-size: 1.2em;
+    }
+    
+    .link{
+        padding-top: 1em;
+        font-size: 1em;
+    }
+    
+    .creditos{
+        padding-top: 0.5em;
+        padding-top: 1em;
+    }
+
+
+}

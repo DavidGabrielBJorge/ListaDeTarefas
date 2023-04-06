@@ -9,19 +9,19 @@
     padding: 8px 15px;
     margin-bottom: 1.5em;
     border-radius: 0;
-    border:1px solid #282c34;
+    border:1px solid #050a0e;
 }
 /*Estilização do botão de envio*/
 .form input[type="submit"]{
-    background-color: #61dafb;
-    border: 1px solid #61dafb;
-    color: black;
-    transition: .5s;
+    background-color: #b4c4de;
+    border: 1px solid #050a0e;
+    color: #050a0e;
+    transition: .7s;
     cursor: pointer;
 }
 .form input[type="submit"]:hover{
-    background-color: white;
-    border-color: #282c34;
+    background-color: #e7e7e9;
+    border-color: #050a0e;
 }
 /*Deve usar o "_" no css modules*/
 .input_container{

@@ -8,7 +8,7 @@ const  Footer = () => {
       <div className={styles.repositorio}>
         <h2>Confira o repositório do projeto</h2>
         
-        <a className={styles.link} href="https://github.com/DavidGabrielBJorge/Imobiliaria">Clique aqui</a>
+        <a className={styles.link} href="https://github.com/DavidGabrielBJorge/ListaDeTarefas">Clique aqui</a>
       
         <p className={styles.creditos}>David  © 2023 Copyright</p>
 

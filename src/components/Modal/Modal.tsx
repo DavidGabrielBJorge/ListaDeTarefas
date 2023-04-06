@@ -18,7 +18,7 @@ const Modal = ({children}: Props) =>{
         <div id="modal" className="hide">
             <div className={styles.fade} onClick={closeModal}></div>
             <div className={styles.modal}>
-                <h2>Texto Modal</h2>
+                <h2>Tarefa</h2>
                 {children}
             </div>
         </div>
