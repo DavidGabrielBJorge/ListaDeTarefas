@@ -1,5 +1,5 @@
 .footer{
-    height: 200px;
+    height: 202.2px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,6 +26,12 @@
     color: inherit;
 }
 
+.link:hover{
+    color: #f89950;
+    transition: 1s;
+}
+
+
 .creditos{
     padding-top: 0.5em;
     display: flex;
@@ -48,6 +54,7 @@
         padding-top: 0.5em;
         padding-top: 1em;
     }
+
 
 
 }
