@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ListaDeTarefas/static/css/main.26b48526.css",
+    "main.js": "/ListaDeTarefas/static/js/main.ed47906f.js",
+    "index.html": "/ListaDeTarefas/index.html",
+    "main.26b48526.css.map": "/ListaDeTarefas/static/css/main.26b48526.css.map",
+    "main.ed47906f.js.map": "/ListaDeTarefas/static/js/main.ed47906f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26b48526.css",
+    "static/js/main.ed47906f.js"
+  ]
+}
