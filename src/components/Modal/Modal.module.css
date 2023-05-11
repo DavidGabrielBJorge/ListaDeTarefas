@@ -12,7 +12,7 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: 80%;
+    width: 30%;
     height: 50%;
     z-index: 1;/*Colocar a frente da tela*/
     background-color: #e7e7e9;
@@ -29,4 +29,13 @@
 
 .modal form{
     width: 90%;
+}
+
+@media (max-width: 1300px) {
+
+    .modal{
+        width: 80%;
+        height: 50%;
+    }
+    
 }
