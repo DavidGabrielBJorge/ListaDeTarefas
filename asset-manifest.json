@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/ListaDeTarefas/static/css/main.9c40bef5.css",
+    "main.css": "/ListaDeTarefas/static/css/main.1fa88a7a.css",
     "main.js": "/ListaDeTarefas/static/js/main.ed47906f.js",
     "index.html": "/ListaDeTarefas/index.html",
-    "main.9c40bef5.css.map": "/ListaDeTarefas/static/css/main.9c40bef5.css.map",
+    "main.1fa88a7a.css.map": "/ListaDeTarefas/static/css/main.1fa88a7a.css.map",
     "main.ed47906f.js.map": "/ListaDeTarefas/static/js/main.ed47906f.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c40bef5.css",
+    "static/css/main.1fa88a7a.css",
     "static/js/main.ed47906f.js"
   ]
 }
